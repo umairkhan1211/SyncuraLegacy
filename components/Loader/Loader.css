@@ -1,0 +1,93 @@
+/* components/Loader/loader.css */
+
+/* Keyframe for a smooth fade-in and slight upward movement */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✅ NEW: Keyframe for the neon purple pulsing glow */
+
+@keyframes neonGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px #a855f7) drop-shadow(0 0 10px #a855f7);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #d8b4fe) drop-shadow(0 0 35px #a855f7);
+  }
+}
+
+
+
+
+/* ✅ NEW: Keyframe for the typewriter effect */
+@keyframes typing {
+  from {
+    width: 0; /* Start with no width, so text is hidden */
+  }
+  to {
+    width: 100%; /* Expand to full width, revealing text */
+  }
+}
+
+/* ✅ NEW: Keyframe for the blinking cursor */
+@keyframes blink-caret {
+  from,
+  to {
+    border-right-color: transparent; /* Cursor is transparent at start/end */
+  }
+  50% {
+    border-right-color: #ffffff; /* Cursor is visible (white) in the middle */
+  }
+}
+
+/* Main full-screen container */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #030014;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+/* Container for the loader content */
+.loader-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* ✅ UPDATED: Spinner class to apply the glow animation */
+.spinner {
+  /* Animation: name duration timing-function iteration-count */
+  animation: neonGlow 2.5s ease-in-out infinite;
+}
+
+/* ✅ UPDATED: Styling for the "SynCuraLegacy" text with typewriter effect */
+.loader-text {
+  color: #ffffff;
+  font-size: 1.5rem; /* Text ka size */
+  font-weight: 600; /* Font ko thora bold karein */
+  letter-spacing: 1px; /* Harfon ke beech halka sa faasla */
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Keep text on a single line */
+  border-right: 3px solid transparent; /* Initial transparent border for cursor */
+  animation:
+    typing 3s steps(12, end) forwards,
+    /* 12 steps for "SynCuraLegacy" (12 characters) */
+    blink-caret 0.75s step-end infinite;
+  /* Adjust animation delay to start after the image appears, if needed */
+  animation-delay: 1s, 4s; /* Example: Typing starts after 1s, blinking after 4s (3s typing + 1s delay) */
+}
