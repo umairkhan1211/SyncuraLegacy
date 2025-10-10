@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { format, addMonths, subMonths, startOfMonth, endOfMonth, startOfWeek, endOfWeek, addDays, isSameMonth, isSameDay, parseISO, isPast, setHours, setMinutes } from 'date-fns';
 import { ChevronLeftIcon, ChevronRightIcon, ArrowLeftIcon } from '@heroicons/react/24/solid';
-import Image from 'next/image';
+
 import Link from 'next/link';
 
 type ScheduleComponentProps = {
@@ -196,7 +196,7 @@ const ScheduleComponent = ({
       {/* Left Panel: Company Info */}
       <div className="md:w-1/3 p-4 bg-[#1A1630] rounded-lg flex flex-col text-left">
         <div className="flex flex-col gap-4 items-center mt-12 mb-6 justify-center">
-          <Image
+          <img
             src="/white.png"
             alt="Company Logo"
             width={60}
@@ -326,7 +326,7 @@ const DetailsFormComponent = ({
           <ArrowLeftIcon className="h-5 w-5" />
         </button>
         <div className="flex flex-col gap-6 items-center mt-12 mb-6">
-          <Image
+          <img
             src="/white.png"
             alt="SynCuraLegacy"
             width={60}

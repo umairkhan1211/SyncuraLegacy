@@ -1,6 +1,6 @@
 'use client';
 import { useState } from "react";
-import Image from "next/image";
+
 import Link from "next/link";
 
 import { NAV_LINKS, SOCIALS } from "@/constants";
@@ -20,7 +20,7 @@ export const Navbar = () => {
           href="/"
           className="flex items-center"
         >
-          <Image
+          <img
             src="/white.png"
             alt="Logo"
             width={50}

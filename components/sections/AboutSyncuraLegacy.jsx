@@ -200,7 +200,7 @@ export const AboutSyncuraLegacy = () => {
           className="relative z-10 text-center"
         >
           <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Let&apos;s Talk
+            Let&apos;s Identify how offshore support can unlock your growth
           </h3>
           <p className="text-lg text-gray-300 mb-8">
             If you&apos;re ready to scale your business without scaling your headaches, I&apos;d love to chat.
@@ -211,7 +211,7 @@ export const AboutSyncuraLegacy = () => {
             bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700
             border border-purple-400"
           >
-            Book Your Free Strategy Call
+          Book Your Free 20 Min Call
           </a>
         </motion.div>
       </div>

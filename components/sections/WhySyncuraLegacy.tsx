@@ -36,7 +36,7 @@ export const WhySyncuraLegacy = () => {
           We're the Team Behind the Teams That Scale
         </motion.h2>
         <motion.p variants={slideInFromRight(0.2)} initial="hidden" animate={inViewHero ? "visible" : "hidden"} className="text-base md:text-lg text-gray-300 mt-3 mb-8">
-          Syncura Legacy exists to give small businesses access to enterprise-grade backend infrastructure — without the overhead.
+          Syncura Legacy exists to give small businesses access to enterprise-grade backend infrastructure without the overhead.
         </motion.p>
 
         <motion.div
@@ -61,7 +61,7 @@ export const WhySyncuraLegacy = () => {
 
       <div ref={refComparison} className="w-full max-w-6xl mt-10">
         <motion.h3 variants={slideInFromTop} initial="hidden" animate={inViewComparison ? "visible" : "hidden"} className="text-2xl md:text-5xl font-bold text-white text-center mb-14">
-          Why Founders Choose Syncura Over VAs, Freelancers, or In-House Teams
+          Why Founders Choose Syncura Over VAs, Freelancers, or In House Teams
         </motion.h3>
 
         <div className="overflow-x-auto">

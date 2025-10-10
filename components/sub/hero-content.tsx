@@ -49,7 +49,7 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-4  max-w-[600px]"
         >
-          Trained virtual teams and local delivery managers helping SMEs scale efficiently — at a fraction of the cost.
+          Trained virtual teams and local delivery managers helping SMEs scale efficiently at a fraction of the cost.
             
         </motion.p>
 
